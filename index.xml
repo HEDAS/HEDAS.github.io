@@ -2,32 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>毛利侦探事务所</title>
-    <link>http://hades2018.com/</link>
+    <link>http://hedas.github.io/</link>
     <description>Recent content on 毛利侦探事务所</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 10 Feb 2018 22:37:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2018 23:11:11 +0800</lastBuildDate>
     
-	<atom:link href="http://hades2018.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://hedas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>UseGit</title>
+      <link>http://hedas.github.io/post/usegit/</link>
+      <pubDate>Sat, 10 Feb 2018 23:11:11 +0800</pubDate>
+      
+      <guid>http://hedas.github.io/post/usegit/</guid>
+      <description>你好，毛利小五郎2 
+初登场的名侦探2</description>
+    </item>
+    
+    <item>
       <title>在Github使用Hugo搭建个人博客</title>
-      <link>http://hades2018.com/post/first/</link>
+      <link>http://hedas.github.io/post/first/</link>
       <pubDate>Sat, 10 Feb 2018 22:37:40 +0800</pubDate>
       
-      <guid>http://hades2018.com/post/first/</guid>
+      <guid>http://hedas.github.io/post/first/</guid>
       <description>你好，毛利小五郎 
 初登场的名侦探</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://hades2018.com/about/</link>
+      <link>http://hedas.github.io/about/</link>
       <pubDate>Sat, 10 Feb 2018 22:35:32 +0800</pubDate>
       
-      <guid>http://hades2018.com/about/</guid>
+      <guid>http://hedas.github.io/about/</guid>
       <description>毛利侦探事务所 绀碧之棺</description>
     </item>
     
