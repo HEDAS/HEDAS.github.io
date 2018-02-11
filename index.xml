@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 11 Feb 2018 07:00:21 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2018 08:39:22 +0800</lastBuildDate>
     
 	<atom:link href="http://hedas.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>欢迎光临</title>
+      <link>http://hedas.github.io/contact/</link>
+      <pubDate>Sun, 11 Feb 2018 08:39:22 +0800</pubDate>
+      
+      <guid>http://hedas.github.io/contact/</guid>
+      <description>欢迎交流：cucudancer@outlook.com
+访问GitHub：GitHub/HEDAS</description>
+    </item>
     
     <item>
       <title>常用的图云、视频云整理</title>
@@ -46,12 +56,12 @@ AWS亚马逊云：https://amazonaws-china.com/cn/</description>
     </item>
     
     <item>
-      <title>About</title>
+      <title>毛利小五郎的馆藏事务所</title>
       <link>http://hedas.github.io/about/</link>
       <pubDate>Sat, 10 Feb 2018 22:35:32 +0800</pubDate>
       
       <guid>http://hedas.github.io/about/</guid>
-      <description>毛利侦探事务所 绀碧之棺</description>
+      <description> 神秘的大门即将打开  前端之馆  </description>
     </item>
     
   </channel>
