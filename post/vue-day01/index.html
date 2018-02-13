@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.32.4" />
+
+  <title>珠峰课堂vue学习笔记-Day 1 &middot; 毛利侦探事务所</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://hedas.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://hedas.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://hedas.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://hedas.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://hedas.github.io/">Menu</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://hedas.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://hedas.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://hedas.github.io/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://hedas.github.io/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://hedas.github.io/topics/"><i class='fa fa-folder fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://hedas.github.io/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/HEDASworld" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/hadesspace" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://weibo.com/2856935742" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/hedas" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2018. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>珠峰课堂vue学习笔记-Day 1</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>13 Feb 2018, 23:47</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://hedas.github.io/topics/%E5%89%8D%E7%AB%AF%E4%B9%8B%E9%A6%86">前端之馆</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://hedas.github.io/tags/vue">vue</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h1 id="珠峰课堂vue学习笔记-day-1">珠峰课堂vue学习笔记-Day 1</h1>
+
+<h3 id="react框架">react框架</h3>
+
+<h3 id="angular4-ts-typescript">angular4 + ts typescript</h3>
+
+<h3 id="es6-let-const-class">es6: let const &hellip; =&gt; class</h3>
+
+<h3 id="vue数据驱动-主要操作数据-不是dom">vue数据驱动（主要操作数据，不是DOM）</h3>
+
+<ul>
+<li>操作DOM</li>
+</ul>
+
+<h3 id="js数据类型">JS数据类型</h3>
+
+<ul>
+<li>基本 number string boolean null undefined</li>
+<li>Object function</li>
+<li>Symbol(es6)</li>
+</ul>
+
+<h3 id="toc_6">{} []</h3>
+
+<ul>
+<li>操作数组的方法，括号中的能改变数组： (pop push unshift shift splice reverse sort) indexOf lastIndexOf concat slice</li>
+</ul>
+
+<h3 id="foreach-filter-过滤-map-映射-some-every-reduce-find-includes-es6">forEach filter(过滤) map(映射) some every reduce (find includes es6)</h3>
+
+<ul>
+<li>遍历数组</li>
+</ul>
+
+<pre><code class="language-javascript">/** Created by cucud on 2018/2/12. */
+let arr=[1,2,3,4,5];
+arr.b='你好';
+
+for (let i=0;i&lt;arr.length;i++) {    //编程式
+    console.log(arr[i]);
+}
+
+//foreach 不支持return
+arr.forEach(function (item) {       //声明式
+    console.log(item);
+});
+
+// for in中，key会变成字符串类型，包括数组的私有属性也会被打印，所以通常不用这种方式
+for (let key in arr) {
+    // console.log(typeof key);
+    console.log(key);
+}
+
+//既能return，又不会遍历私有属性，for of
+for (let val of arr) {
+    console.log(val);
+}
+</code></pre>
+
+<ul>
+<li>遍历对象</li>
+</ul>
+
+<pre><code class="language-javascript">let obj={school:'JNU',age:8};
+// for (let val of obj) {
+//     console.log(val);//会报错：TypeError: obj is not iterable
+// }
+
+//改进方法：用Object.keys()，把对象的key封装成新的数组
+for (let val of Object.keys(obj)) {
+    console.log(val);
+    // console.log(obj.val);   //不能用点，会认为是obj.&quot;school&quot;
+    console.log(obj[val]);
+}
+</code></pre>
+
+<ul>
+<li>filter：删除，map：更新</li>
+</ul>
+
+<pre><code class="language-javascript">// filter：不改变原数组，返回过滤后的新数组，回调函数：true的值放进新数组
+let newAry = [1,2,3,4,5].filter(function (item, index) {
+    // return 2&lt;item&lt;5;//相当于(boolean)&lt;5，永远都是true
+    return 2&lt;item &amp;&amp; item&lt;5;
+});
+console.log(newAry);
+
+// map映射，将原有的数组映射成新数组，不改变元素组，回调函数返回什么就是什么
+// [1,2,3] 变成 &lt;li&gt;1&lt;/li&gt;&lt;li&gt;2&lt;/li&gt;&lt;li&gt;3&lt;/li&gt;
+
+let arr1 = [1,2,3].map(function (item) {
+    // return  2;                  //[ 2, 2, 2 ]
+    // return '&lt;li&gt;'+item+'&lt;/li&gt;'  //[ '&lt;li&gt;1&lt;/li&gt;', '&lt;li&gt;2&lt;/li&gt;', '&lt;li&gt;3&lt;/li&gt;' ]
+    return `&lt;li&gt;${item}&lt;/li&gt;`;  //一样的结果
+    // return item*3;
+})
+console.log(arr1.join(' '));    //join把数组变成字符串
+</code></pre>
+
+<ul>
+<li>include和find的使用</li>
+</ul>
+
+<pre><code class="language-javascript">let arr3=[1,2,3,4,55];
+console.log(arr3.includes(5));  //找具体的某一项
+
+//回调函数返回true，表示找到了，然后停止寻找！不会改变数组。
+let result=arr3.find(function (item, index) {
+    return item.toString().indexOf(5)&gt;-1;   //找到数组中含有5的那一项
+});
+console.log(result);//找不到返回undefined
+</code></pre>
+
+<ul>
+<li>some和every的使用</li>
+</ul>
+
+<pre><code class="language-javascript">//some：找到true后停止，返回true，every：找到false后停止，返回true
+let arr3=[1,2,3,4,5];
+let result=arr3.some(function (item, index) {
+    return item.toString().indexOf(5)&gt;-1;   //找到数组中含有5的那一项
+});
+console.log(result);//找不到返回undefined
+
+//要每一项都是true才行
+let result2=arr3.every(function (item, index) {
+    return item.toString().indexOf(5)&gt;-1;   //找到数组中含有5的那一项
+});
+console.log(result2);//找不到返回undefined
+</code></pre>
+
+<ul>
+<li>reduce的使用</li>
+</ul>
+
+<pre><code class="language-javascript">// reduce 收敛 回调函数有4个参数：prev, next, index（当前索引）, item(原数组)
+// 返回叠加后的结果，原数组不发生变化
+[1,2,3,4,5].reduce(function (prev, next, index, item) {
+    console.log(arguments);
+});
+//第一次遍历：prev：0，next：1，index：1，item：{1,2,3,4,5}
+// { '0': 1, '1': 2, '2': 1, '3': [ 1, 2, 3, 4, 5 ] }
+// { '0': undefined, '1': 3, '2': 2, '3': [ 1, 2, 3, 4, 5 ] }
+// { '0': undefined, '1': 4, '2': 3, '3': [ 1, 2, 3, 4, 5 ] }
+// { '0': undefined, '1': 5, '2': 4, '3': [ 1, 2, 3, 4, 5 ] }
+
+[1,2,3,4,5].reduce(function (prev, next, index, item) {
+    console.log(arguments);
+    return 100; //本次返回值会作为下一次的prev
+});
+// { '0': 1, '1': 2, '2': 1, '3': [ 1, 2, 3, 4, 5 ] }
+// { '0': 100, '1': 3, '2': 2, '3': [ 1, 2, 3, 4, 5 ] }
+// { '0': 100, '1': 4, '2': 3, '3': [ 1, 2, 3, 4, 5 ] }
+// { '0': 100, '1': 5, '2': 4, '3': [ 1, 2, 3, 4, 5 ] }
+
+console.log([1,2,3,4,5].reduce(function (prev, next, index, item) {
+    return prev+next; //本次返回值会作为下一次的prev
+}));
+//15
+
+let sum=[{price:30,count:2},{price:30,count:3},{price:30,count:4}].reduce(function (prev, next) {
+    return prev.price*prev.count+next.price*next.count;
+});
+console.log(sum);
+// 这里第一次的返回结果是数，下一轮循环的时候，prev是数，next是对象，所以结果是NaN
+// NaN
+
+//解决方法一：
+let sum1=[{price:30,count:2},{price:30,count:3},{price:30,count:4}].reduce(function (prev, next) {
+    return {price:prev.price*prev.count+next.price*next.count, count:1};
+});
+console.log(sum1.price);
+
+//解决方法二，多循环一次：
+let sum2=[0,{price:30,count:2},{price:30,count:3},{price:30,count:4}].reduce(function (prev, next) {
+    return prev+next.price*next.count;
+});
+console.log(sum2);
+
+//解决方法三，reduce指定第一次prev是0：
+let sum3=[{price:30,count:2},{price:30,count:3},{price:30,count:4}].reduce(function (prev, next) {
+    return prev+next.price*next.count;
+},0);
+console.log(sum3);
+
+// 二维数组变一维数组：
+console.log([[1,2,3],[4,5,6],[7,8,9]].join(','));   //字符串
+
+let flat=[[1,2,3],[4,5,6],[7,8,9]].reduce(function (prev, next) {
+    return prev.concat(next);
+});
+console.log(flat);
+</code></pre>
+
+<h3 id="arrow-function箭头函数">arrow-function箭头函数</h3>
+
+<ul>
+<li>不具备this，argument</li>
+<li>自己家没有就去找上一级的this</li>
+<li>如何更改this的指向
+
+<ul>
+<li>call apply bind</li>
+<li>var that = this</li>
+<li>=&gt;</li>
+</ul></li>
+<li>如何确定this是谁？看谁调用的——&rdquo;.&ldquo;前面是谁就是谁</li>
+</ul>
+
+<pre><code class="language-javascript">// 普通函数
+function a(b) {
+    return b+1;
+}
+
+// arrow function
+//只有一个参数，b的括号可以去掉，a=b=&gt;{}
+//如果有大括号，return不能去掉
+let a=(b)=&gt;{return b+1;}
+
+//简单写法，如果没大括号，就是返回值
+let a=b=&gt;b+1;
+
+//嵌套函数
+function a(b) {
+    return function (c) {
+        return b+c;
+    }
+}
+
+console.log(a(1)(2));
+
+//嵌套函数要用return
+let a=(b)=&gt;{
+    return (c)=&gt;{
+        return b+c
+    };
+}
+
+console.log(a(1)(2));
+
+//简洁的写法，只有一个参数，可省略括号；省略大括号，右边直接就是return值
+let a = b =&gt; c =&gt; b+c;  //高阶函数
+
+console.log(a(1)(2));
+</code></pre>
+
+<ul>
+<li>闭包：函数执行的一瞬间叫闭包（不销毁的作用域），当执行后返回的结果必须是引用数据类型，被外界变量接受，这个函数不会销毁（模块化）</li>
+<li>在vue中，很多时候不能用箭头函数</li>
+</ul>
+
+<h3 id="框架和库">框架和库</h3>
+
+<ul>
+<li>框架（拥有完整的解决方案） vue</li>
+<li>库 jQuery、underscore zepto animate.css</li>
+</ul>
+
+<h3 id="渐进增强">渐进增强</h3>
+
+<ul>
+<li>vue全家桶 vuejs + vue-router + vuex + axios + vue-cli</li>
+</ul>
+
+<h3 id="mvc-backbone-单向">MVC（backbone） 单向</h3>
+
+<ul>
+<li>model 数据</li>
+<li>view 视图</li>
+<li>controller 控制器</li>
+</ul>
+
+<h3 id="mvvc-双向的">MVVC 双向的</h3>
+
+<ul>
+<li>model 数据</li>
+<li>view 视图</li>
+<li>viewModel 视图模型</li>
+<li>controller 控制器</li>
+</ul>
+
+<h3 id="安装vue">安装vue</h3>
+
+<ul>
+<li>不支持IE8，没有 Object.defineProperty()</li>
+<li>cdn安装</li>
+<li>npm安装</li>
+</ul>
+
+<pre><code>npm init //初始化，不能有大写字母、特殊字符（包括中文）、空格、vue等与项目冲突的
+npm init -y //一键生成，文件夹作为项目名，所以不能有中文等
+npm install vue
+</code></pre>
+
+<h3 id="简单的示例">简单的示例</h3>
+
+<p>大括号的缺点：一直按<code>ctrl+f5</code>会显示{{msg}}</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;简单的示例&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    &lt;!-- moustache 小胡子语法：可以放赋值、取值、三元{{msg=='hello, HADES'?1:0}} --&gt;
+    {{msg}}
+    &lt;!-- 表单元素 input checkbox textarea radio select --&gt;
+    &lt;!-- vue的指令 directive 只是dom上的行间属性，vue给这类属性赋予一定的意义来实现特殊功能：都以v-开头，value属性默认情况下会被vue忽略掉 selected checked 都没有意义 --&gt;
+    &lt;!-- v-model会将msg的值赋予输入框，输入框的值改变了会影响数据 --&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;msg&quot;&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    //引入vue后会白给你一个Vue构造函数
+    let vm=new Vue({    //vm == view model
+        el: '#app',     //vue能管理的DOM
+        data:{          //data中的数据会被vm所代理
+            msg:'hello, HADES'   //可以通过vm。msf取到对应的内容，在f12控制台
+        }
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="defineproperty方法-最后一句obj-name-val会造成死循环">defineProperty方法，最后一句obj.name=val会造成死循环</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;define Property&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+    let obj={};
+    Object.defineProperty(obj,'name',{
+// 调用get、set方法，必须注释掉value等属性
+//        value:1,
+//        configurable:false, //不能用这个delete obj.name;来删除
+//        writable:false,     //不可重新赋值
+//        enumerable:false,   //不可枚举 for(key in obj){console.log(key)}
+        get() {
+            //取obj的name属性会触发
+            return 1;
+        },
+        set(val) {
+            //给obj赋值，会触发
+            console.log(val);
+            obj.name=val;   //此句会造成死循环，一直重复赋值
+        }
+    });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="解决方法">解决方法</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;define Property&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+    let obj={};
+    let temp={};
+    Object.defineProperty(obj,'name',{
+        get() {
+            return temp.name;
+        },
+        set(val) {
+            temp[&quot;name&quot;]=val;
+        }
+    });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="defineproperty的使用">defineProperty的使用</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;define Property&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type=&quot;text&quot; id=&quot;input&quot;&gt;
+&lt;script&gt;
+    let obj={};
+    let temp={};
+    Object.defineProperty(obj,'name',{
+        get() {
+            return temp.name;
+        },
+        set(val) {
+            temp.name=val;  //改变temp的结果
+            input.value=val;//将值赋予输入框
+        }
+    });
+    //这里默认就是id名，不用getElementById了
+    input.value=obj.name;   //页面一加载时，会调用get方法
+    input.addEventListener('input',function () {    //等待输入框变化
+        obj.name=this.value;    //当值变化时，会调用set方法
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>浏览器控制台输入下面代码，会修改输入框的内容</p>
+
+<pre><code class="language-javascript">obj.name=123
+</code></pre>
+
+<h3 id="指令的用法">指令的用法</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;指令的用法&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;msg&quot;&gt;
+    &lt;!--div里面不能写东西，msg可用三元符号?:--&gt;
+    &lt;!-- 防止大括号出现在页面中 --&gt;
+    &lt;div v-text=&quot;msg&quot;&gt;&lt;/div&gt;
+    &lt;!--v-once，只绑定一次，当数据再次发生变化，也不会导致页面刷新--&gt;
+    &lt;div v-once v-text=&quot;msg&quot;&gt;&lt;/div&gt;
+    &lt;!-- v-html，把html当作html字符串渲染 --&gt;
+    &lt;div v-html=&quot;p&quot;&gt;{{p}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    let vm=new Vue({
+        el: '#app',
+        data:{
+            msg:'hello, HADES',
+            p:&quot;&lt;h1&gt;hello,world&lt;/h1&gt;&quot;,
+        }
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="动态增加属性">动态增加属性</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;reactivity&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    {{a.school}}
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    //vue会循环data中的数据（数据劫持），依次增加getter和setter
+    let vm=new Vue({
+        el: '#app',
+        data:{
+            a:{school:''}//使用变量时，先要初始化，否则新加的属性不会导致页面刷新
+        }
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>另一种方法</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;reactivity&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    {{a.school}}
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    //vue会循环data中的数据（数据劫持），依次增加getter和setter
+    let vm=new Vue({
+        el: '#app',
+        data:{
+            a:{}
+        }
+    });
+    vm.$set(vm.a,'school',1);
+//    vm.a={school:'JNU',age:8};  //如果要添加多个属性，可以替换对象
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="数组的操作">数组的操作</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;reactivity&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    {{arr}}
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    //vue会循环data中的数据（数据劫持），依次增加getter和setter
+    let vm=new Vue({
+        el: '#app',
+        data:{
+            arr:[1,2,3,4,5]
+        }
+    });
+//    vm.arr[0]=100;  //改变数组的某一项是监控不到的
+//    vm.arr.length-=2;//改变数组长度也是监控不到的
+    //但实际是有改变的！！！
+    // 改变数组的方法： pop push shift unshift sort reserve splice
+//    vm.arr.reverse();
+    vm.arr=vm.arr.map(item=&gt;item*=3);   //这样才能改变数组
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="v-for的使用">v-for的使用</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;v-for&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    &lt;!-- 要循环谁，就在谁的身上增加v-for属性 --&gt;
+    &lt;ul&gt;
+        &lt;!-- v-for用in也可以 --&gt;
+        &lt;!--&lt;li v-for=&quot;fruit of fruits&quot;&gt;{{fruit.name}}&lt;/li&gt;--&gt;
+        &lt;!--&lt;li v-for=&quot;(fruit,index) of fruits&quot;&gt;{{fruit.name}} {{index+1}}&lt;/li&gt;--&gt;
+        &lt;li v-for=&quot;(fruit,index) in fruits&quot;&gt;{{index+1}}.{{fruit.name}}
+            &lt;ul&gt;
+                &lt;li v-for=&quot;(color,childIndex) in fruit.color&quot;&gt;{{index+1}}-{{childIndex+1}}.{{color}}&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div v-for=&quot;c in 'aaaa'&quot;&gt;{{c}}&lt;/div&gt;
+    &lt;div v-for=&quot;c in 5&quot;&gt;{{c}}&lt;/div&gt; &lt;!-- 这里从1开始循环 --&gt;
+    &lt;div v-for=&quot;(value,key,index) in obj&quot;&gt;{{key}}:{{value}} {{index}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    let vm=new Vue({
+        el:'#app',
+        data:{
+            obj:{name:'zfpx',age:9,address:'xxx'},
+            fruits:[
+                {name:'香蕉',color:['green','yellow']},
+                {name:'苹果',color:['red','green','yellow']},
+                {name:'西瓜',color:['pink']}
+            ]
+        }
+    });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="传统event绑定方法">传统event绑定方法</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;event&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- onclick要加括号，表示执行函数 --&gt;
+&lt;div onclick=&quot;fn()&quot;&gt;点我吧&lt;/div&gt;
+&lt;script&gt;
+    function fn() {
+        alert('成功了');
+    }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="vue事件绑定方法">vue事件绑定方法</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;event&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- v-on === @ --&gt;
+&lt;!-- 如果不传入参数，则不要写括号，会自动传入事件源，如果写括号，要手动传入$event属性 --&gt;
+&lt;!--&lt;div id=&quot;app&quot; v-on:mousedown=&quot;fn&quot;&gt;点我吧&lt;/div&gt;--&gt;
+&lt;!--&lt;div id=&quot;app&quot; @mousedown=&quot;fn&quot;&gt;点我吧&lt;/div&gt;--&gt;
+&lt;div id=&quot;app&quot; @mousedown=&quot;fn($event,100)&quot;&gt;点我吧&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    let vm=new Vue({    //根实例
+        el:'#app',
+        methods:{
+//            fn:function(){alert(this)}  //method中的this都是指向实例，object
+//            fn:()=&gt;{alert(this)}    //这里的this会指向window
+            fn:function (event, a) {
+                console.log(event);
+            }
+        },
+        data:{
+            fn1:1   //不能跟methods中的函数名重合
+        }
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="简易的例子">简易的例子</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Todo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;val&quot; @keyup=&quot;add&quot;&gt;
+    &lt;ul&gt;
+        &lt;li v-for=&quot;(a,index) in arr&quot;&gt;{{a}} &lt;button @click=&quot;remove(index)&quot;&gt;删除&lt;/button&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    let vm=new Vue({
+        el:'#app',
+        methods:{
+            add(e){
+                if (e.keyCode === 13) {
+                    this.arr.unshift(this.val);
+                    this.val='';
+                }
+            },
+            remove(i){
+                this.arr=this.arr.filter((item,index)=&gt;index!==i);
+            }
+        },
+        data:{
+            arr:[],
+            val:'',
+        },
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="改进版">改进版</h3>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Todo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+    &lt;!--&lt;input type=&quot;text&quot; v-model=&quot;val&quot; @keyup.enter=&quot;add&quot;&gt;--&gt;
+    &lt;!--&lt;input type=&quot;text&quot; v-model=&quot;val&quot; @keyup.a=&quot;add&quot;&gt;--&gt;
+    &lt;input type=&quot;text&quot; v-model=&quot;val&quot; @keyup.ctrl.enter=&quot;add&quot;&gt;
+    &lt;ul&gt;
+        &lt;li v-for=&quot;(a,index) in arr&quot;&gt;{{a}} &lt;button @click=&quot;remove(index)&quot;&gt;删除&lt;/button&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script src=&quot;./node_modules/vue/dist/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    let vm=new Vue({
+        el:'#app',
+        methods:{
+            add(e){
+                this.arr.unshift(this.val);
+                this.val='';
+            },
+            remove(i){
+                this.arr=this.arr.filter((item,index)=&gt;index!==i);
+            }
+        },
+        data:{
+            arr:[],
+            val:'',
+        },
+    })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="细节需要注意的">细节需要注意的</h3>
+
+<p>js一般放最下面，不影响DOM的渲染</p>
+
+<h3 id="webstorm">Webstorm</h3>
+
+<p>设置npm：enable，language：react jsx</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://hedas.github.io/post/cloud/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://hedas.github.io/post/cloud/">常用的图云、视频云整理</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'hadesspace';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://hedas.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-113900396-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on 毛利侦探事务所</title>
+    <link>http://hedas.github.io/tags/vue/</link>
+    <description>Recent content in Vue on 毛利侦探事务所</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 13 Feb 2018 23:47:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://hedas.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>珠峰课堂vue学习笔记-Day 1</title>
+      <link>http://hedas.github.io/post/vue-day01/</link>
+      <pubDate>Tue, 13 Feb 2018 23:47:23 +0800</pubDate>
+      
+      <guid>http://hedas.github.io/post/vue-day01/</guid>
+      <description>珠峰课堂vue学习笔记-Day 1 react框架 angular4 + ts typescript es6: let const &amp;hellip; =&amp;gt; class vue数据驱动（主要操作数据，不是DOM）  操作DOM  JS数据类型  基本 number string boolean null undefined Object function Symbol(es6)  {} []  操作数组的方法，括号中的能改变数组： (pop push unshift shift splice reverse sort) indexOf lastIndexOf concat slice  forEach filter(过滤) map(映射) some every reduce (find includes es6)  遍历数组  /** Created by cucud on 2018/2/12. */ let arr=[1,2,3,4,5]; arr.b=&#39;你好&#39;; for (let i=0;i&amp;lt;arr.</description>
+    </item>
+    
+  </channel>
+</rss>
