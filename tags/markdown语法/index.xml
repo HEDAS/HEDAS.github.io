@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown语法 on 毛利侦探事务所</title>
+    <link>http://hedas.github.io/tags/markdown%E8%AF%AD%E6%B3%95/</link>
+    <description>Recent content in Markdown语法 on 毛利侦探事务所</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 11 Feb 2018 02:38:37 +0800</lastBuildDate>
+    
+	<atom:link href="http://hedas.github.io/tags/markdown%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>markdown的语法及软件整理</title>
+      <link>http://hedas.github.io/post/markdown/</link>
+      <pubDate>Sun, 11 Feb 2018 02:38:37 +0800</pubDate>
+      
+      <guid>http://hedas.github.io/post/markdown/</guid>
+      <description>常用语法 1. 标题（#号后面要有空格） # h1标题 ## h2标题 ### h3标题 #### h4标题 ##### h5标题 ###### h6标题  2. 分级标题（=、-最少可写一个） 一级标题 ===================== 二级标题 ---------------------  3. 引用（要写空行隔开） &amp;gt;这是一级引用 &amp;gt;&amp;gt;这是二级引用 &amp;gt;&amp;gt;&amp;gt;这是三级引用 &amp;gt;这是一级引用  4. [TOC]（博客系统不支持） [TOC]  5. 标记（多行代码会合成一行） 行首`for i in range(10): print(&#39;Hello,world!&#39;)`行尾  6. 代码块 方法一： ``` for i in range(10): print(&amp;quot;Hello,world!&amp;quot;) ```  方法二： #用tab缩进 for i in range(10): print(&amp;quot;Hello,world!&amp;quot;)  7. 插入链接 方法一： [醋醋主页](https://space.bilibili.com/2689967?from=search&amp;amp;seid=6148408239723302950#/)  方法二： [醋醋主页][醋醋网址] [醋醋网址]: https://space.</description>
+    </item>
+    
+  </channel>
+</rss>
